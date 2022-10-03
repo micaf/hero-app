@@ -1,0 +1,30 @@
+<div class="form" *ngIf="showTemplate; else loading">
+  <div class="container-form" >
+    <form class="hero-form"  [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+      <h3 class="title">{{isEdit ? 'Edit' : 'Add' }} your hero!</h3>
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput appUpperCaseInput="true" type="text" formControlName="name" #name>
+        <mat-error *ngIf="formValidation.name?.touched && formValidation.name?.invalid">Must complete name hero</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea matInput type="text" formControlName="description"></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="submit-button" type="submit" [disabled]="!heroForm.valid">{{isEdit ? 'Edit' : 'Add' }}</button>
+    </form>
+   
+  </div>
+  <div class="example-button-container">
+    <button mat-fab color="primary"  (click)="goBack()" aria-label="Go back to Dashboard" matTooltip="Go back to Dashboard">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
+</div>
+
+<ng-template #loading>
+  <loading-spinner></loading-spinner>
+</ng-template>
+
+
+

@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+body {
+    padding: 3rem;
+    max-width: 1200px;
+    margin: auto;
+    background: rgb(160, 129, 148);
+    margin-bottom: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

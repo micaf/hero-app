@@ -1,0 +1,9 @@
+<div class="dashboard">
+    <div *ngIf="showTemplate; else loading">
+        <app-heroes-list [heroes]="heroes" (addHero)="addHero()" (editHero)="editHero($event)" (deleteHero)="deleteHero($event)"></app-heroes-list>
+    </div>
+
+    <ng-template #loading>
+        <loading-spinner></loading-spinner>
+    </ng-template>
+</div>

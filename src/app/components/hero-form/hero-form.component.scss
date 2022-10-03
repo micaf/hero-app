@@ -1,0 +1,36 @@
+.container-form {
+    width: 100%;
+    padding: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+h3{
+    font-weight: bold;
+    color: #3f323f;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.hero-form {
+    border: solid 2px #3f323f;
+    border-radius: 50px;
+    width: 70%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    mat-form-field{
+        margin: 1rem;
+        width: 50%;
+        align-items: center;
+    }
+}
+
+button{
+    margin: 1rem 0rem;
+}
