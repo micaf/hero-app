@@ -5,7 +5,7 @@
       <mat-form-field appearance="fill">
         <mat-label>Name</mat-label>
         <input matInput appUpperCaseInput="true" type="text" formControlName="name" #name>
-        <mat-error *ngIf="formValidation.name?.touched && formValidation.name?.invalid">Must complete name hero</mat-error>
+        <mat-error *ngIf="formValidation.name?.touched && formValidation.name?.invalid">You must complete the name of the hero</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Description</mat-label>

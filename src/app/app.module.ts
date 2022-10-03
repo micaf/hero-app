@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { SharedModule } from 'src/shared/shared.module';
 
 //Material
 import { MaterialModule } from 'src/shared/material.module';
@@ -20,9 +21,6 @@ import { InMemoryDataService } from 'src/shared/services/in-memory-data.service'
 import { ErrorInterceptor } from 'src/shared/interceptors/error-interceptor';
 import { HeroService } from 'src/shared/services/hero.service';
 
-//Directive
-import { UpperCaseInputDirective } from 'src/shared/directives/upper-case-input.directive';
-import { SharedModule } from 'src/shared/shared.module';
 
 
 

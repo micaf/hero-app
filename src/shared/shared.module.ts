@@ -1,10 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+//Material
 import { MaterialModule } from './material.module';
+
+//Components
 import { MessageDialogComponent } from './components/message-dialog/message-dialog.component';
-import { UpperCaseInputDirective } from './directives/upper-case-input.directive';
-import { MessageDialogService } from './services/message-dialog.service';
 import { LoadingSpinnerComponent } from 'src/shared/components/loading-spinner/loading-spinner.component';
+
+//Directive
+import { UpperCaseInputDirective } from './directives/upper-case-input.directive';
+
+//Service
+import { MessageDialogService } from './services/message-dialog.service';
+
 
 
 
